@@ -1173,3 +1173,30 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+
+
+/* Multi-Image Container Fix */
+.portfolio__img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.portfolio__img-container .portfolio__img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Single image slide adjustment */
+.portfolio__img-container:has(.portfolio__img:only-child) .portfolio__img {
+  height: auto;
+  max-height: 280px;
+}
