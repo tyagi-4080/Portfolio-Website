@@ -1165,11 +1165,3 @@ img {
 }
 
 
-.portfolio__img-container {
-  display: flex;
-  gap: 10px;
-}
-.portfolio__img-container .portfolio__img {
-  width: 100%;
-  object-fit: cover;
-}
